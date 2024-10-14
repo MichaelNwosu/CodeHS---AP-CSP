@@ -1,0 +1,32 @@
+#1.14.4
+
+
+def run_to_finish():
+    move()
+    move()
+    move()
+    move()
+
+
+
+def run_to_hurdle():
+    move()
+    move()
+    move()
+
+
+def jump_hurdle():
+    turn_left()
+    move()
+    turn_right()
+    move()
+    turn_right()
+    move()
+    turn_left()
+
+
+for i in range(13):
+    if front_is_clear():
+        move()
+    else:
+        jump_hurdle()
