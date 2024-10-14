@@ -1,0 +1,10 @@
+for i in range(5):
+    move()
+turn_left()
+for i in range(9):
+    if right_is_blocked():
+        put_ball()
+        move()
+    else:
+        move()
+put_ball()
