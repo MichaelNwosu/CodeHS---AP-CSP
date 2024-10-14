@@ -1,0 +1,20 @@
+#1.13.4
+
+while balls_present():
+    move()
+
+#1.13.5
+
+while no_balls_present():
+    put_ball()
+    if front_is_clear():
+        move()
+
+#1.13.6
+
+while not_facing_north():
+    turn_left()
+while no_balls_present():
+    put_ball()
+    if front_is_clear():
+        move()
