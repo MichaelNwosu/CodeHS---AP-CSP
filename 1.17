@@ -1,0 +1,38 @@
+#1.17.5
+
+for i in range(10):
+    if color_is(color['red']):
+        paint('blue')
+        if front_is_clear():
+            move()
+    else:
+        paint('red')
+        if front_is_clear():
+            move()
+
+#1.17.6
+
+def pattern():
+    paint('black')
+    move()
+    paint('red')
+    if front_is_clear():
+        move()
+for i in range(8):
+    for i in range(4):
+        pattern()
+    
+    if facing_east():
+        turn_left()
+        if front_is_clear():
+            move()
+        turn_left()
+    elif facing_west():
+        turn_right()
+        if front_is_clear():
+            move()
+        turn_right()
+turn_right()
+for i in range(7):
+    move()
+turn_left()
